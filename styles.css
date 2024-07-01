@@ -1,0 +1,136 @@
+/* CSS styles for header, footer, and main content */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  color: #2c3e50;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: #2c3e50;
+}
+
+main {
+  padding-top: 8em; /* Adjusted for header height */
+  text-align: center;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.section-title {
+  background: #3e2318;
+  color: white;
+  padding: 1em;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items horizontally */
+  gap: 1em;
+  padding: 2em;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 1em); /* Adjust width of gallery items */
+  background: #f7f7f7;
+  padding: 0.5em;
+  text-align: center; /* Center align content inside each gallery item */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* General footer styles */
+footer {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%; /* Adjust as needed for responsiveness */
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
